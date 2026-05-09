@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fanatico Bochum</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:Arial, sans-serif;
+      background:#07111f;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    header{
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:70px;
+      color:#2196f3;
+      letter-spacing:3px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:22px;
+      color:#dbeafe;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#1976d2;
+      color:white;
+      text-decoration:none;
+      border-radius:10px;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      background:#42a5f5;
+      transform:scale(1.05);
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    h2{
+      color:#42a5f5;
+      margin-bottom:25px;
+      font-size:40px;
+    }
+
+    .about{
+      line-height:1.8;
+      color:#cbd5e1;
+      font-size:18px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      margin-top:40px;
+    }
+
+    .card{
+      background:#0f172a;
+      padding:30px;
+      border-radius:15px;
+      transition:0.3s;
+      border:1px solid #1e3a5f;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      border-color:#42a5f5;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:#020617;
+      color:#94a3b8;
+      font-size:14px;
+    }
+
+    @media(max-width:700px){
+
+      .hero h1{
+        font-size:45px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      h2{
+        font-size:30px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="hero">
+    <h1>FANATICO BOCHUM</h1>
+    <p>Leidenschaft. Kurve. Zusammenhalt.</p>
+
+    <a href="#about" class="btn">
+      Mehr erfahren
+    </a>
+  </div>
+</header>
+
+<section id="about">
+  <h2>Über Uns</h2>
+
+  <div class="about">
+    Fanatico Bochum steht für Leidenschaft, Support und bedingungslosen Zusammenhalt.
+    Woche für Woche unterstützen wir unseren Verein mit Stimmung, Choreos und voller Hingabe.
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Support</h3>
+      <p>
+        Heimspiel oder Auswärtsfahrt — immer laut, immer da.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Gemeinschaft</h3>
+      <p>
+        Freundschaft, Loyalität und die Kurve als Zuhause.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Leidenschaft</h3>
+      <p>
+        Blau und Weiß im Herzen — für immer.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Fanatico Bochum
+</footer>
+
+</body>
+</html>
